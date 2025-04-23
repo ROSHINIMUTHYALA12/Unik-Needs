@@ -4,11 +4,13 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+
 .container {
   max-width: 2500px;
   margin: 0 auto;
-  padding: 0 0;
+  padding: 0;
 }
+
 /* Top Bar */
 .top-bar {
   display: flex;
@@ -44,7 +46,6 @@
 .icons a i {
   font-size: 20px;
 }
-
 .cart {
   position: relative;
 }
@@ -58,7 +59,6 @@
   padding: 2px 5px;
   border-radius: 50%;
 }
-
 .cart-price {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -72,7 +72,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 125px;
-  border-bottom: 1px solid #ddd;
   height: 50px;
 }
 .nav-links {
@@ -89,18 +88,15 @@
   align-items: center;
   font-size: 15px;
   font-weight: 600;
-  font-style: normal;
 }
 .nav-links a:first-child {
   background-color: #2e2e2e;
   color: white;
   font-weight: bold;
 }
-
 .nav-links a i {
   margin-right: 8px;
 }
-
 .search-bar {
   display: flex;
   align-items: center;
@@ -124,12 +120,11 @@
   align-items: center;
   justify-content: center;
 }
-
 .search-bar button i {
   font-size: 18px;
 }
 
-/* hero section */
+/* Hero Section */
 .hero {
   width: 100%;
   height: auto;
@@ -140,7 +135,7 @@
   display: block;
 }
 
-/* catagories section */
+/* Categories Section */
 .categories {
   text-align: center;
   padding: 40px 80px;
@@ -149,7 +144,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 .categories h2 {
   font-family: "Montserrat", sans-serif;
   color: #3b82f6;
@@ -180,7 +174,7 @@
   margin-top: 20px;
 }
 
-/* Blinds Gallery Section */
+/* Blinds Section */
 .blinds-gallery {
   text-align: center;
   padding: 40px 50px;
@@ -189,14 +183,12 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 .blinds-gallery h2 {
   font-family: "Montserrat", sans-serif;
   color: #3b82f6;
   margin-bottom: 30px;
   font-size: 24px;
 }
-
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -204,14 +196,150 @@
   padding: 0 20px;
   grid-auto-rows: 250px;
 }
-
 .gallery-card {
   text-align: center;
   height: 100%;
 }
-
 .gallery-card img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+/* Links Section */
+.link-list {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 10px;
+}
+.link-list a {
+  display: block;
+  text-decoration: underline;
+  margin: 20px 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: #2979ff;
+}
+
+.active {
+  background-color: #e0f0ff;
+  padding: 10px 0;
+  display: block;
+}
+
+/*mesh section*/
+.gallery-section {
+  padding: 40px 20px;
+  max-width: 1110px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.gallery-heading {
+  text-align: center;
+  font-size: 24px;
+  color: #1a73e8;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #333;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/*blind gallery*/
+.blinds-gallery-section {
+  padding: 40px 20px;
+  max-width: 1110px;
+  margin: auto;
+}
+
+.gallery-heading {
+  text-align: center;
+  font-size: 24px;
+  color: #1a73e8;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.blinds-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.blinds-gallery-grid img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #333;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/*curtains section*/
+.curtains-gallery-section {
+  padding: 40px 20px;
+  max-width: 1110px;
+  margin: auto;
+}
+
+.gallery-heading {
+  text-align: center;
+  font-size: 24px;
+  color: #1a73e8;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.curtains-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.curtains-gallery-grid img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #333;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/*curtain accessories*/
+.curtain-accessories-section {
+  padding: 40px 20px;
+  max-width: 1110px;
+  margin: auto;
+}
+
+.gallery-heading {
+  text-align: center;
+  font-size: 24px;
+  color: #1a73e8;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.accessories-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.accessories-gallery-grid img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #333;
+  border-radius: 5px;
   object-fit: cover;
 }
